@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SneakerScape 👟🔥</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <h1>SneakerScape</h1>
+    <ul>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#signup">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h2>Find Your Style. Step Up Your Game. 🔥</h2>
+    <p>The freshest sneakers in town delivered to your door.</p>
+    <button onclick="alert('Explore our latest drops!')">Shop Now</button>
+  </header>
+
+  <section id="products" class="sneaker-gallery">
+    <div class="sneaker">
+      <img src="images/Sneaker 1.jpg" alt="Sneaker 1">
+      <button onclick="changeButtonText(this)">Buy Now</button>
+    </div>
+    <div class="sneaker">
+      <img src="images/Sneaker 2.jpg" alt="Sneaker 2">
+      <button onclick="changeButtonText(this)">Buy Now</button>
+    </div>
+    <div class="sneaker">
+      <img src="images/Sneaker 3.jpg" alt="Sneaker 3">
+      <button onclick="changeButtonText(this)">Buy Now</button>
+    </div>
+  </section>
+
+  <section id="signup" class="signup-form">
+    <h2>Join SneakerScape Now</h2>
+    <form id="signupForm">
+      <input type="text" id="email" placeholder="Email" required>
+      <div id="emailFeedback"></div>
+      <input type="password" id="password" placeholder="Password" required>
+      <div id="passwordFeedback"></div>
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SneakerScape. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
